@@ -11,4 +11,7 @@ import glassdoor_scraper as gs
 path = r'C:\Users\user03\Documents\chromedriver\chromedriver.exe'
 slp_time=15
 
-df = gs.get_jobs('data scientist', 15, False, path, slp_time)
+df = gs.get_jobs('data scientist', 99, False, path, slp_time)
+
+
+df.to_csv('glassdoor_jobs.csv', index = False)
